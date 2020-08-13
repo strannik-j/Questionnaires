@@ -45,6 +45,7 @@ class QuestionnaireSerializer(serializers.Serializer):
     name = serializers.CharField(max_length=150)
     start_date = serializers.DateField()
     stop_date = serializers.DateField()
+    description = serializers.CharField(required=False, allow_null=True, allow_blank=True)
 
     def create(self, validated_data):
         return Questionnaire.objects.create(**validated_data)
