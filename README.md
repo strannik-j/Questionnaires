@@ -27,6 +27,7 @@
 5. Загружаем свежую версию программы:
     
     `cd /opt/questionnaires`
+    
     `git clone https://github.com/strannik-j/Questionnaires.git .`
     
 6. Устанавливаем зависимости:
