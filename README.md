@@ -7,8 +7,9 @@
 - Django REST framework
 
 ## Инструкция по установке:
+
 1. Создаём каталоги для программы и виртуального окружения:
-    sudo mkdir {/opt/questionnaires,/opt/env/questionnaires} -p
+  `sudo mkdir {/opt/questionnaires,/opt/env/questionnaires} -p`
 
 2. Меняем владельца каталогов на текущего пользователя:
     sudo chown -R $USER:$USER {/opt/questionnaires,/opt/env/questionnaires}
