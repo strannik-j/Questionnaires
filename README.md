@@ -50,10 +50,10 @@ API доступно по адресу: 127.0.0.1:8000/api/
 
 Для работы от учетной записи администратора необходимо получить Token:
   python3 manage.py shell
-  >>> from django.contrib.auth.models import User
-  >>> from rest_framework.authtoken.models import Token
-  >>> user = User.objects.get(pk=user_name)
-  >>> Token.objects.create(user=user)
+  from django.contrib.auth.models import User
+  from rest_framework.authtoken.models import Token
+  user = User.objects.get(pk=user_name)
+  Token.objects.create(user=user)
 Вместо user_name подставьте имя пользователя администратора
 
 ###Общие термины:
