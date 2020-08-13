@@ -150,13 +150,13 @@ API доступно по адресу: `127.0.0.1:8000/api/`
  ###POST
 - questionnaires/ - создаёт опросы:
   
-  curl -X POST -d '{"questionnaire":{"name":"Первый опрос","start_date":"2020-8-12","stop_date":"2020-10-1"}}' http://127.0.0.1:8000/api/questionnaires/ -H 'Authorization: Token значение_токена' -H 'Content-Type: application/json'
+  curl -X POST -d '{"questionnaire":{"name":"Первый опрос","start_date":"2020-8-12","stop_date":"2020-10-1"}}' http://127.0.0.1:8000/api/questionnaires/ -H 'Authorization: Token *значение_токена*' -H 'Content-Type: application/json'
   
   После создания опроса start_date невозможно изменить через API.
 
 - questions/ - создаёт вопросы:
   
-  curl -X POST -d '{"question":{"text":"Твой любимый цвет?","questionnaire_id":"1","type":"1"}}' http://127.0.0.1:8000/api/questions/ -H 'Authorization: Token значение_токена' -H 'Content-Type: application/json'
+  curl -X POST -d '{"question":{"text":"Твой любимый цвет?","questionnaire_id":"1","type":"1"}}' http://127.0.0.1:8000/api/questions/ -H 'Authorization: Token *значение_токена*' -H 'Content-Type: application/json'
   
   типы вопросов:
   1 - ответ текстом
@@ -165,7 +165,7 @@ API доступно по адресу: `127.0.0.1:8000/api/`
 
 - answers/ - создаёт варианты ответов:
   
-  curl -X POST -d '{"answer":{"text":"Белый","question_id":"1"}}' http://127.0.0.1:8000/api/answers/ -H 'Authorization: Token значение_токена' -H 'Content-Type: application/json'
+  curl -X POST -d '{"answer":{"text":"Белый","question_id":"1"}}' http://127.0.0.1:8000/api/answers/ -H 'Authorization: Token *значение_токена*' -H 'Content-Type: application/json'
 
 - results/ - добавляет ответы пользователей:
   
