@@ -102,7 +102,8 @@ API доступно по адресу: `127.0.0.1:8000/api/`
            },]
         name,
         start_date,
-        stop_date
+        stop_date,
+        description,
         },]
    }
 
@@ -151,7 +152,7 @@ API доступно по адресу: `127.0.0.1:8000/api/`
  ###POST
 - questionnaires/ - создаёт опросы:
   
-  curl -X POST -d '{"questionnaire":{"name":"Первый опрос","start_date":"2020-8-12","stop_date":"2020-10-1"}}' http://127.0.0.1:8000/api/questionnaires/ -H 'Authorization: Token *значение_токена*' -H 'Content-Type: application/json'
+  curl -X POST -d '{"questionnaire":{"name":"Первый опрос","start_date":"2020-8-12","stop_date":"2020-10-1", "description":"Описание опроса"}}' http://127.0.0.1:8000/api/questionnaires/ -H 'Authorization: Token *значение_токена*' -H 'Content-Type: application/json'
   
   После создания опроса start_date невозможно изменить через API.
 
