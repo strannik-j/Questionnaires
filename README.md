@@ -84,9 +84,9 @@ API доступно по адресу: `127.0.0.1:8000/api/`
 #### GET:
 - questionnaires/ - возвращает JSON с опросами, вопросами и вариантами ответов:
   
-  curl -X GET http://127.0.0.1:8000/api/questionnaires/
+  `curl -X GET http://127.0.0.1:8000/api/questionnaires/`
   
-  {questionnaires: [{
+  `{questionnaires: [{
         id,
         questions:[{
             id,
@@ -103,13 +103,13 @@ API доступно по адресу: `127.0.0.1:8000/api/`
         start_date,
         stop_date
         },]
-   }
+   }`
 
 - questions/ - возвращает JSON с вопросами и вариантами ответов:
   
-  curl -X GET http://127.0.0.1:8000/api/questions/
+  `curl -X GET http://127.0.0.1:8000/api/questions/`
   
-     {questions:[{
+     `{questions:[{
         id,
         answer:[{
           id,
@@ -120,7 +120,7 @@ API доступно по адресу: `127.0.0.1:8000/api/`
         type,
         questionnaire_id,
        },]
-     } 
+     }` 
   
 - answers/ - возвращает JSON с вариантами ответов:
   
