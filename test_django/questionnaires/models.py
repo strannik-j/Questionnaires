@@ -7,6 +7,7 @@ class Questionnaire(models.Model):
     name = models.CharField(max_length=150, unique=True)
     start_date = models.DateField()
     stop_date = models.DateField()
+    description = models.TextField(null=True, blank=True)
     # question = models.ForeignKey('Question', related_name='questionnaires', on_delete=models.CASCADE, null=True)
 
     def __str__(self):
